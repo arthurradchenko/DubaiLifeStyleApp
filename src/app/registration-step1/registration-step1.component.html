@@ -1,0 +1,204 @@
+<div class="header">
+    <div class="spot">
+        <div class="number">1</div>
+        <div class="desc">Spot Remaining in <img src="../../assets/images/flag.png"> Israel</div>
+    </div>
+    <div class="logo"></div>
+    <div class="expiring">
+        <div class="desc">
+            Time Remaining
+            <br>OFFER EXPIRES
+        </div>
+        <div class="timer">10:03</div>
+    </div>
+</div>
+<div class="reg-form">
+    <div class="content">
+        <div>
+            <iframe width="500" height="288" src="https://www.youtube.com/embed/Fdf5aTYRW0E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="reg-wrapper">
+            <form class="reg" [formGroup]="regFormUp" novalidate>
+                <div class="inputs">
+                    <div class="name">
+                        <input type="text" id="name" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.FIRSTNAME}}"
+                            [ngClass]="{inputError: regFormUp.controls['name'].invalid && regFormUp.controls['name'].touched}"
+                            formControlName="name">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['name'].touched && regFormUp.controls['name'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['name'].invalid && regFormUp.controls['name'].touched && regFormUp.controls['name'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <input type="text" id="mail" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.EMAIL}}"
+                            [ngClass]="{inputError: regFormUp.controls['mail'].invalid && regFormUp.controls['mail'].touched}"
+                            formControlName="mail">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['mail'].touched && regFormUp.controls['mail'].value == '' ">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['mail'].invalid && regFormUp.controls['mail'].touched && regFormUp.controls['mail'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
+                </div>
+            </form>
+        </div>
+        <div class="wrapper">
+            <h6>We respect your privacy and your information is 100% secure</h6>
+        </div>
+        <div class="secure">
+            <div class="mcafee logos"></div>
+            <div class="verisign logos"></div>
+            <div class="symantec logos"></div>
+            <div class="geotrust logos"></div>
+            <div class="ssl logos"></div>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div class=''>
+        <h3>Meet Scott Hathaway</h3>
+    </div>
+    <p>CEO & Founder, DUBAI LIFESTYLE APP</p>
+    <div class="elipse scott"></div>
+    <div>
+        <p>If you haven't yet heard, the <label>DUBAI LIFESTYLE APP</label> has just launched internationally
+            <br> and we are looking for <label class="highlight">100 first testers</label> to make profit of over
+    </div>
+    <h1>$7000<p> a day</p>
+    </h1>
+    <div>Watch the video now to see how can you join us - <label class="highlight">FREE!</label></div>
+    <div class="elipse team"></div>
+    <div class="greetings">
+        <p>Your friends,</p>
+        the <label>DUBAI LIFESTYLE APP</label> team!
+    </div>
+</div>
+<div class="reviews">
+    <h3>What People Are Saying</h3>
+    <div class="replies">
+        <div class="by">
+            By <a>Lincoln Tremin</a> on April 10, 2016
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+        <div class="verified">Verified Member</div>
+        <div class="message">
+            For the 3 past year I tried everything you could imagine to profit online. But I was scammed every single
+            time. That was my last shot. And I couldn't be happier to announce that I made my first $6,839.89 online.
+        </div>
+        <div class="by">
+            By <a>Liam Nelson</a> on May 02, 2016
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
+        <div class="verified">Verified Member</div>
+        <div class="message">
+            I made $11,987.35 in my first 72 hours after activating software. This is the first time I made any money
+            online.
+        </div>
+        <div class="by">
+            By <a>Mark Jones</a> on May 02, 2016
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <div class="verified">Verified Member</div>
+        <div class="message">
+            Get the Dubai Lifestyle App now so you can finally get out of race and start living the life you always
+            wanted.
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="content">
+        <div class="form-header">
+            Enter your full name and email address in the form below to get emmediate
+            <span class="highlight">FREE</span> access to the <span class="highlight">DUBAI LIFESTYLE APP</span>
+        </div>
+        <div class="reg-wrapper">
+            <form class="reg" [formGroup]="regFormDown" novalidate>
+                <div class="inputs">
+                    <div class="name">
+                        <input type="text" id="name" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.FIRSTNAME}}"
+                            [ngClass]="{inputError: regFormDown.controls['name'].invalid && regFormDown.controls['name'].touched}"
+                            formControlName="name">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormDown.controls['name'].touched && regFormDown.controls['name'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormDown.controls['name'].invalid && regFormDown.controls['name'].touched && regFormDown.controls['name'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <input type="text" id="mail" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.EMAIL}}"
+                            [ngClass]="{inputError: regFormDown.controls['mail'].invalid && regFormDown.controls['mail'].touched}"
+                            formControlName="mail">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormDown.controls['mail'].touched && regFormDown.controls['mail'].value == '' ">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormDown.controls['mail'].invalid && regFormDown.controls['mail'].touched && regFormDown.controls['mail'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
+                </div>
+            </form>
+        </div>
+        <div class="wrapper">
+            <h6>We respect your privacy and your information is 100% secure</h6>
+        </div>
+        <div class="secure">
+            <div class="mcafee logos"></div>
+            <div class="verisign logos"></div>
+            <div class="symantec logos"></div>
+            <div class="geotrust logos"></div>
+            <div class="ssl logos"></div>
+        </div>
+        <div class="description">
+            <h6>Binary options present a significant opportunity for you to make serious earnings, but like any
+                investment, they present an element of risk. Potential loss of full of partial
+                funds should be considered at all times before making any trade. We urge you to explore individual tax
+                liability laws in your country of residence, and recommend
+                reading our Terms of Service for more information. Please note: It is illegal under U.S. law to solicit
+                the purchase and sale of commodity options unless explicitly listed for
+                trading on a CFTC exchange or legally exempt.</h6>
+        </div>
+        <div class="terms">
+            <a>Terms</a> | <a>Privacy</a> | <a>Support</a>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,8 @@
     .content
         width: 500px
         margin: 100px
+        .response
+            display: none
         .wrapper
             display: flex
             width: 100%
@@ -50,7 +52,7 @@
             left: 50%
             transform: translate(-50%)
             .btn 
-                width: 500px
+                width: 100%
                 height: 80px
                 background-color: #ffae00
                 font-weight: 750
@@ -59,6 +61,8 @@
                 color: #4f2922
                 border: 0px
             .reg
+                .button
+                    width: 100%
                 .inputs 
                     display: flex
                     justify-content: center
@@ -68,15 +72,18 @@
                     .name 
                         position: absolute
                         left: 0px
+                        width: 46%
                     .email
-                        margin-left: 20px
+                        margin-left: 8%
                         position: absolute
                         right: 0px
+                        width: 46%
                     .alert
                         position: relative
                         color: #fa2902
                         font-weight: 500
                         padding: 5px
+                       
 .header
     position: absolute
     background: rgba(0, 0, 0, 0.5)
@@ -131,7 +138,7 @@ input
     border: 1px
     border-radius: 6px
     padding: 11px 6px
-    width: 228px
+    width: 100%
 .about
     position: relative
     justify-content: center
@@ -280,7 +287,7 @@ input
                         color: #fa2902
                         font-weight: 500
                         padding: 5px
-@media only screen and (min-width: 940px)
+@media only screen and (min-width: 940px) and (max-width: 1024px)
     .reg-form
         background: url(/assets/images/mainpage_bg.png) center no-repeat
         background-size: cover
@@ -294,6 +301,8 @@ input
         .content
             width: 500px
             margin: 100px
+            .response
+                display: none
             .wrapper
                 display: flex
                 width: 100%
@@ -342,6 +351,7 @@ input
                     color: #4f2922
                     border: 0px
                 .reg
+                    width: 100%
                     .inputs 
                         display: flex
                         justify-content: center
@@ -456,7 +466,7 @@ input
             text-align: center
             color: #4f2922
         .replies
-            width: 55%
+            width: 70%
             height: auto
             position: relative
             left: 50%
@@ -563,5 +573,81 @@ input
                             color: #fa2902
                             font-weight: 500
                             padding: 5px
-@media only screen and (min-width: 768px)
+@media only screen and (min-width: 568px) and (max-width: 940px)
+    .header
+        height: 100px
+        .spot
+            position: relative
+            top: 20px
+        .expiring
+            position: relative
+            top: 20px 
+    .reviews
+        .replies
+            width: 80%
+    .reg-form
+        height: 600px
+        .content
+            margin-top: 130px
+            .reg-wrapper 
+                .reg
+                    width: 100%
+@media only screen and (min-width: 421px) and (max-width: 567px)
+    .reg-form
+        height: 550px
+        .content
+            width: 92% 
+            margin-top: 130px
+            div
+                .laptop
+                    display: none
+                .response
+                    display: inline-block
+            .reg-wrapper 
+                .reg
+                    width: 100%
+    .header
+        height: 100px
+        .spot
+            position: relative
+            top: 20px
+        .expiring
+            position: relative
+            top: 20px 
+        .logo
+            width: 92%
+    .reviews
+        .replies
+            width: 80%
+@media only screen and (min-width: 300px) and (max-width: 420px)
+    .reg-form
+        height: 550px
+        .content
+            width: 92% 
+            margin-top: 130px
+            div
+                .laptop
+                    display: none
+                .response
+                    display: inline-block
+            .reg-wrapper 
+                .reg
+                    width: 100%
+                .btn 
+                    font-size: 25px
+                    height: 60px
+    .header
+        height: 100px
+        .spot
+            position: relative
+            top: 20px
+        .expiring
+            position: relative
+            top: 20px 
+        .logo
+            width: 92%
+    .reviews
+        .replies
+            width: 80%
+
 

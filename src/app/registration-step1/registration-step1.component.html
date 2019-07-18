@@ -1,9 +1,9 @@
 <div class="header">
+    <div class="logo"></div>
     <div class="spot">
         <div class="number">1</div>
         <div class="desc">Spot Remaining in <img src="../../assets/images/flag.png"> Israel</div>
     </div>
-    <div class="logo"></div>
     <div class="expiring">
         <div class="desc">
             Time Remaining
@@ -14,10 +14,17 @@
 </div>
 <div class="reg-form">
     <div class="content">
-        <div>
-            <iframe width="500" height="288" src="https://www.youtube.com/embed/Fdf5aTYRW0E" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div style="display: flex; justify-content: center">
+            <div class="laptop">
+                <iframe class="laptop" width="500" height="288" src="https://www.youtube.com/embed/Fdf5aTYRW0E"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="response">
+                <iframe class="response" width="240" height="135" src="https://www.youtube.com/embed/Fdf5aTYRW0E"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
         </div>
         <div class="reg-wrapper">
             <form class="reg" [formGroup]="regFormUp" novalidate>
@@ -53,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
+                <div class="button">
                     <button type="submit" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
                 </div>
             </form>

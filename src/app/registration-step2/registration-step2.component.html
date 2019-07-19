@@ -1,1 +1,340 @@
-<p>registration-step2 works!</p>
+<div class="header">
+    <div class="logo"></div>
+    <div class="spot">
+        <div class="number">1</div>
+        <div class="desc">Spot Remaining in <img src="../../assets/images/flag.png"> Israel</div>
+    </div>
+    <div class="expiring">
+        <div class="desc">
+            Time Remaining
+            <br>OFFER EXPIRES
+        </div>
+        <div class="timer">{{time | date: 'mm:ss'}}</div>
+    </div>
+</div>
+<div class="reg-form">
+    <div class="head">
+        <h2>Welcome To The <span class="highlight">DUBAI LIFESTYLE APP</span> Members!</h2>
+    </div>
+    <div class="content">
+        <div>
+            <div class="laptop">
+                <iframe class="laptop" width="500" height="288" src="https://www.youtube.com/embed/Fdf5aTYRW0E"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="response">
+                <iframe class="response" width="240" height="135" src="https://www.youtube.com/embed/Fdf5aTYRW0E"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="reg-wrapper">
+            <form class="reg" [formGroup]="regFormUp" novalidate>
+                <div class="inputs">
+                    <div class="input firstname">
+                        <input type="text" id="firstname" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.FIRSTNAME}}"
+                            [ngClass]="{inputError: regFormUp.controls['firstname'].invalid && regFormUp.controls['firstname'].touched}"
+                            formControlName="firstname">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['firstname'].touched && regFormUp.controls['firstname'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['firstname'].invalid && regFormUp.controls['firstname'].touched && regFormUp.controls['firstname'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input lastname">
+                        <input type="text" id="lastname" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.LASTNAME}}"
+                            [ngClass]="{inputError: regFormUp.controls['lastname'].invalid && regFormUp.controls['lastname'].touched}"
+                            formControlName="lastname">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['lastname'].touched && regFormUp.controls['lastname'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['lastname'].invalid && regFormUp.controls['lastname'].touched && regFormUp.controls['lastname'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input email">
+                        <input type="text" id="mail" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.EMAIL}}"
+                            [ngClass]="{inputError: regFormUp.controls['mail'].invalid && regFormUp.controls['mail'].touched}"
+                            formControlName="mail">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['mail'].touched && regFormUp.controls['mail'].value == '' ">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['mail'].invalid && regFormUp.controls['mail'].touched && regFormUp.controls['mail'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input password">
+                        <input type="password" id="password" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.PASSWORD}}"
+                            [ngClass]="{inputError: regFormUp.controls['password'].invalid && regFormUp.controls['password'].touched}"
+                            formControlName="password">
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['password'].touched && regFormUp.controls['password'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['password'].invalid && regFormUp.controls['password'].touched && regFormUp.controls['password'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input country">
+                        <select class="form-control" name="location" formControlName="country">
+                            <option>Ukraine</option>
+                            <option>UK</option>
+                            <option>USA</option>
+                            <option>Poland</option>
+                        </select>
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['country'].touched && regFormUp.controls['country'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormUp.controls['country'].invalid && regFormUp.controls['country'].touched && regFormUp.controls['password'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" (click)="register()" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="about">
+    <div class="secure-wrapper">
+        <div class="wrapper">
+            <h6>We respect your privacy and your information is 100% secure</h6>
+        </div>
+        <div class="secure">
+            <div class="mcafee logos"></div>
+            <div class="verisign logos"></div>
+            <div class="symantec logos"></div>
+            <div class="geotrust logos"></div>
+            <div class="ssl logos"></div>
+        </div>
+    </div>
+    <div class='text'>
+        <p>Hi! The entire team at the <label>DUBAI LIFESTYLE APP</label> thilled you've made it into the <label
+                class="highlight">MEMBER'S AREA</label>
+            <br> You're only one step away from officially becoming a beta tester and ranking in over
+            <h1>$7183,82</h1>
+            <p> in profits each and
+                <br><label class="highlight">EVERY SINGLE DAY</label>
+    </div>
+    <div class="elipse team"></div>
+    <div class="greetings">
+        <p>Your friends,</p>
+        the <label>DUBAI LIFESTYLE APP</label> team!
+    </div>
+    <div class="steps-header">
+        <h3>Start profiting in <span class="highlight">3 Simple Steps</span></h3>
+    </div>
+    <div class="steps">
+        <div class="step">
+            <div class="number one"></div>
+            <div class="description">
+                Complete the registration form with your accurate details and hit submit
+            </div>
+        </div>
+        <div class="step">
+            <div class="number two"></div>
+            <div class="description">
+                Deposit the minimum brokers’ requirement of at least $250 to activate your account
+            </div>
+        </div>
+        <div class="step">
+            <div class="number three"></div>
+            <div class="description">
+                After depositing your funds, you will receive an email from me with details on how to log into
+                your account and our recommended broker will manage your account and start making you
+                the profits you want and deserve.
+            </div>
+        </div>
+    </div>
+    <div class="benefits-header">
+        <h3>Here What You Get When You Register</h3>
+    </div>
+    <div class="benefits">
+        <div class="layer">
+            <div class="term first">
+                <div class="marker auto-trade"></div>
+                <div class="description">
+                    <h3 class="highlight">Auto-trade Functionality</h3>
+                    Make 99.8% accurate trades without the
+                    hassle. Just select the auto-trade
+                    function and let the profits roll in. Or you
+                    can simply make your own trades using
+                    our manual option.
+
+                </div>
+            </div>
+            <div class="term">
+                <div class="marker vip"></div>
+                <div class="description">
+                    <h3 class="highlight">VIP Members Area</h3>
+                    Connect with the worldwide owners of
+                    the Dubai Lifestyle App. Here you can ask
+                    questions, share stories and comment
+                    about your profits.
+
+                </div>
+            </div>
+        </div>
+        <div class="layer ">
+            <div class="term first">
+                <div class="marker support"></div>
+                <div class="description">
+                    <h3 class="highlight">24/7 Support</h3>
+                    It’s easy to reach us! Get your questions
+                    answered any day, any time by our
+                    friendly customer support manager.
+                </div>
+            </div>
+            <div class="term">
+                <div class="marker members-only"></div>
+                <div class="description">
+                    <h3 class="highlight">Members-Only Newsletters</h3>
+                    Get exclusive access to industry insights
+                    and quick and effective tips you can use
+                    to maximize your profits.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="content">
+        <div class="reg-wrapper">
+            <form class="reg" [formGroup]="regFormDown" novalidate>
+                <div class="inputs">
+                    <div class="row">
+                        <div class="input firstname">
+                            <input type="text" id="firstname" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.FIRSTNAME}}"
+                                [ngClass]="{inputError: regFormDown.controls['firstname'].invalid && regFormDown.controls['firstname'].touched}"
+                                formControlName="firstname">
+                            <div class="errorAlert">
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['firstname'].touched && regFormDown.controls['firstname'].value == ''">
+                                    {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                                </div>
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['firstname'].invalid && regFormDown.controls['firstname'].touched && regFormDown.controls['firstname'].value != ''">
+                                    {{vocabulary.FORMS.VALIDATION.INVALID}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input lastname second">
+                            <input type="text" id="lastname" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.LASTNAME}}"
+                                [ngClass]="{inputError: regFormDown.controls['lastname'].invalid && regFormDown.controls['lastname'].touched}"
+                                formControlName="lastname">
+                            <div class="errorAlert">
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['lastname'].touched && regFormDown.controls['lastname'].value == ''">
+                                    {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                                </div>
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['lastname'].invalid && regFormDown.controls['lastname'].touched && regFormDown.controls['lastname'].value != ''">
+                                    {{vocabulary.FORMS.VALIDATION.INVALID}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input email">
+                            <input type="text" id="mail" placeholder="{{vocabulary.FORMS.PLACEHOLDERS.EMAIL}}"
+                                [ngClass]="{inputError: regFormDown.controls['mail'].invalid && regFormDown.controls['mail'].touched}"
+                                formControlName="mail">
+                            <div class="errorAlert">
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['mail'].touched && regFormDown.controls['mail'].value == '' ">
+                                    {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                                </div>
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['mail'].invalid && regFormDown.controls['mail'].touched && regFormDown.controls['mail'].value != ''">
+                                    {{vocabulary.FORMS.VALIDATION.INVALID}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input password second">
+                            <input type="password" id="password"
+                                placeholder="{{vocabulary.FORMS.PLACEHOLDERS.PASSWORD}}"
+                                [ngClass]="{inputError: regFormDown.controls['password'].invalid && regFormDown.controls['password'].touched}"
+                                formControlName="password">
+                            <div class="errorAlert">
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['password'].touched && regFormDown.controls['password'].value == ''">
+                                    {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                                </div>
+                                <div class="alert"
+                                    *ngIf="regFormDown.controls['password'].invalid && regFormDown.controls['password'].touched && regFormDown.controls['password'].value != ''">
+                                    {{vocabulary.FORMS.VALIDATION.INVALID}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input country">
+                        <select class="form-control" name="location" formControlName="country">
+                            <option>Ukraine</option>
+                            <option>UK</option>
+                            <option>USA</option>
+                            <option>Poland</option>
+                        </select>
+                        <div class="errorAlert">
+                            <div class="alert"
+                                *ngIf="regFormDown.controls['country'].touched && regFormDown.controls['country'].value == ''">
+                                {{vocabulary.FORMS.VALIDATION.REQUIRED}}
+                            </div>
+                            <div class="alert"
+                                *ngIf="regFormDown.controls['country'].invalid && regFormDown.controls['country'].touched && regFormDown.controls['password'].value != ''">
+                                {{vocabulary.FORMS.VALIDATION.INVALID}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" (click)="register()" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
+                </div>
+            </form>
+        </div>
+        <div class="wrapper">
+            <h6>We respect your privacy and your information is 100% secure</h6>
+        </div>
+        <div class="secure">
+            <div class="mcafee logos"></div>
+            <div class="verisign logos"></div>
+            <div class="symantec logos"></div>
+            <div class="geotrust logos"></div>
+            <div class="ssl logos"></div>
+        </div>
+        <div class="description">
+            <h6>Binary options present a significant opportunity for you to make serious earnings, but like any
+                investment, they present an element of risk. Potential loss of full of partial
+                funds should be considered at all times before making any trade. We urge you to explore individual tax
+                liability laws in your country of residence, and recommend
+                reading our Terms of Service for more information. Please note: It is illegal under U.S. law to solicit
+                the purchase and sale of commodity options unless explicitly listed for
+                trading on a CFTC exchange or legally exempt.</h6>
+        </div>
+        <div class="terms">
+            <a>Terms</a> | <a>Privacy</a> | <a>Support</a>
+        </div>
+    </div>
+</div>

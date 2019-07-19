@@ -1,0 +1,537 @@
+.header
+    position: absolute
+    background: rgba(0, 0, 0, 0.5)
+    height: 60px
+    width: 100%
+    z-index: 1
+    left: 0px
+    top: 0px
+    .spot
+        float: left
+        height: 100%
+        width: 150px
+        display: flex
+        align-items: center
+        color: white
+        .number
+            font-size: 45px
+            margin: 0 5px
+            padding-bottom: 5px
+        .desc
+            font-size: 16px
+            position: relative
+            img
+                height: 16px
+                width: 20px
+    .expiring
+        float: right
+        height: 100%
+        width: 235px
+        display: flex
+        align-items: center
+        color: white
+        .desc
+            font-size: 16px
+        .timer 
+            font-size: 45px
+            margin: 0 5px
+            padding-bottom: 5px
+            position: relative
+
+    .logo
+        background: url(/assets/images/Shape-9.png) center no-repeat
+        background-size: contain
+        position: absolute
+        height: 45px
+        width: 470px
+        left: 50%
+        transform: translate(-50%)
+        margin-top: 8px
+.reg-form
+    background: url(/assets/images/form_background.png) center no-repeat
+    background-size: cover
+    height: 435px
+    display: flex
+    justify-content: center
+    width: 100%
+    position: relative
+    left: 0px
+    top: 0px
+    .head
+        margin-top: 50px
+        position: absolute
+        margin-bottom: 10px
+        text-align: center
+        h2
+            font-weight: 200
+            color: white
+            .highlight
+                font-weight: 700
+    .content
+        margin-top: 120px
+        display: flex
+        position: relative
+        .response
+            display: none
+        .wrapper
+            display: flex
+            width: 100%
+            justify-content: center
+            color: white
+        .secure
+            display: flex
+            justify-content: center
+            height: 50px
+            .logos
+                width: 70px
+                margin: 5px
+            .mcafee
+                background: url(/assets/images/mcafee.png) center no-repeat
+                background-size: contain
+                
+            .verisign
+                background: url(/assets/images/verisign.png) center no-repeat
+                background-size: contain
+            .symantec
+                background: url(/assets/images/Vector-Smart-Object1.png) center no-repeat
+                background-size: contain
+                width: 90px
+            .geotrust
+                background: url(/assets/images/geoTrust.png) center no-repeat
+                background-size: contain
+                width: 98px
+                height: 50px
+            .ssl
+                background: url(/assets/images/ssl.png) center no-repeat
+                background-size: contain
+                width: 45px
+                height: 45px
+        .reg-wrapper
+            display: flex
+            margin-left: 20px
+            .btn 
+                width: 100%
+                height: 60px
+                background-color: #ffae00
+                font-weight: 750
+                font-size: 28px
+                margin-top: 3px
+                color: #4f2922
+                border: 0px
+            .reg
+                width: 100%
+                .button
+                    width: 100%
+                .inputs 
+                    .input
+                        width: 100%
+                        margin-bottom: 20px
+                        .alert
+                            padding: 0px
+                            margin: 0px
+                            position: absolute
+                            color: red
+                            font-weight: 700
+                        .form-control
+                            width: 100%
+                            font-size: 12px
+                            border: 1px
+                            border-radius: 6px
+                            padding: 4px 6px
+                            height: 25px
+input
+    width: 100%
+    font-size: 12px
+    border: 1px
+    border-radius: 6px
+    padding: 4px 6px
+.about
+    position: relative
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 16px
+    .text
+        position: relative
+        margin-top: 30px
+        .highlight
+            font-weight: 500
+            color: #ffae00
+            display: inline-block  
+        div
+            h3
+                color: #4f2922
+    .elipse
+        background-size: contain
+        height: 250px
+        width: 250px
+        position: relative
+        left: (50%)
+        transform: translate(-50%)
+    .team 
+        background: url(/assets/images/team.png) no-repeat center
+    .greetings
+        position: relative
+        p
+            font-style: italic
+    .secure-wrapper
+        position: relative 
+        left: 50%
+        transform: translate(-50%)
+        .wrapper
+            display: flex
+            width: 100%
+            justify-content: center
+            color: grey
+            h6
+                margin-bottom: 0px
+        .secure
+            display: flex
+            justify-content: center
+            height: 50px
+            position: relative
+            .logos
+                width: 70px
+                margin: 5px
+            .mcafee
+                background: url(/assets/images/mcafee.png) center no-repeat
+                background-size: contain       
+            .verisign
+                background: url(/assets/images/verisign.png) center no-repeat
+                background-size: contain
+            .symantec
+                background: url(/assets/images/Vector-Smart-Object1.png) center no-repeat
+                background-size: contain
+                width: 90px
+            .geotrust
+                background: url(/assets/images/geoTrust.png) center no-repeat
+                background-size: contain
+                width: 98px
+                height: 50px
+            .ssl
+                background: url(/assets/images/ssl.png) center no-repeat
+                background-size: contain
+                width: 45px
+                height: 45px
+    .steps-header
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        h3
+            color: #4f2922
+            .highlight
+                font-weight: 700
+                display: inline-block
+    .steps
+        width: 600px
+        position: relative
+        left: 50%
+        transform: translate(-50%)
+        .step
+            display: flex
+            width: 100%
+            margin: 20px
+            height: 70px
+            .number
+                width: 70px
+                height: 70px
+                flex-shrink: 0
+            .description
+                margin-left: 10px
+                display: flex
+                align-items: center
+                font-size: 15px
+                text-align: left
+            .one
+                background: url(/assets/images/1.png) no-repeat center
+                background-size: contain
+            .two
+                background: url(/assets/images/2.png) no-repeat center
+                background-size: contain
+            .three
+                background: url(/assets/images/3.png) no-repeat center
+                background-size: contain
+    .benefits-header
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        h3
+            color: #4f2922
+    .benefits
+        width: 60%
+        position: relative
+        left: 50%
+        transform: translate(-50%)
+        .layer
+            display: flex
+            width: 100%
+            .first
+                flex-shrink: 0
+            .term
+                width: 50%
+                display: flex
+                flex-shrink: 1px
+                margin: 20px
+                .marker
+                    width: 80px
+                    height: 80px
+                    display: flex
+                    align-items: center
+                    position: relative
+                    top: 25px
+                .auto-trade
+                    background: url(/assets/images/auto_trade.png) no-repeat center
+                    flex-shrink: 0
+                    background-size: contain
+                .vip
+                    background: url(/assets/images/vip.png) no-repeat center
+                    flex-shrink: 0
+                    background-size: contain
+                .support
+                    background: url(/assets/images/24_7.png) no-repeat center
+                    flex-shrink: 0
+                    background-size: contain
+                .members-only
+                    background: url(/assets/images/members_only.png) no-repeat center
+                    flex-shrink: 0
+                    background-size: contain
+                .description
+                    text-align: left
+                    margin-left: 10px
+                    font-size: 13px
+                    .highlight
+                        font-weight: 600
+                        color: #ffae00
+.footer
+    background: url(/assets/images/form_background.png) center no-repeat
+    background-size: cover
+    height: auto
+    display: flex
+    justify-content: center
+    width: 100%
+    position: relative
+    left: 0px
+    top: 0px
+    .content
+        margin-top: 40px
+        position: relative
+        width: 55%
+        .wrapper
+            display: flex
+            width: 100%
+            justify-content: center
+            color: white
+        .secure
+            display: flex
+            justify-content: center
+            height: 50px
+            .logos
+                width: 70px
+                margin: 5px
+            .mcafee
+                background: url(/assets/images/mcafee.png) center no-repeat
+                background-size: contain
+                
+            .verisign
+                background: url(/assets/images/verisign.png) center no-repeat
+                background-size: contain
+            .symantec
+                background: url(/assets/images/Vector-Smart-Object1.png) center no-repeat
+                background-size: contain
+                width: 90px
+            .geotrust
+                background: url(/assets/images/geoTrust.png) center no-repeat
+                background-size: contain
+                width: 98px
+                height: 50px
+            .ssl
+                background: url(/assets/images/ssl.png) center no-repeat
+                background-size: contain
+                width: 45px
+                height: 45px
+        .reg-wrapper
+            display: flex
+            width: 66%
+            justify-content: center
+            position: relative
+            left: 50%
+            transform: translate(-50%)
+            .btn 
+                width: 100%
+                height: 60px
+                background-color: #ffae00
+                font-weight: 750
+                font-size: 28px
+                margin-top: 3px
+                color: #4f2922
+                border: 0px
+            .reg
+                width: 100%
+                .button
+                    width: 100% 
+                .inputs
+                    .row
+                        display: flex
+                        width: 100%
+                        margin: 0
+                    .second
+                        margin-left: 15px
+        .description 
+            color: white
+            text-align: center
+        .terms
+            text-align: center
+            color: white
+            margin: 10px
+            a
+                color: white
+                cursor: pointer
+        .secure
+            display: flex
+            justify-content: center
+            height: 50px
+            .logos
+                width: 70px
+                margin: 5px
+            .mcafee
+                background: url(/assets/images/mcafee.png) center no-repeat
+                background-size: contain
+                
+            .verisign
+                background: url(/assets/images/verisign.png) center no-repeat
+                background-size: contain
+            .symantec
+                background: url(/assets/images/Vector-Smart-Object1.png) center no-repeat
+                background-size: contain
+                width: 90px
+            .geotrust
+                background: url(/assets/images/geoTrust.png) center no-repeat
+                background-size: contain
+                width: 98px
+                height: 50px
+            .ssl
+                background: url(/assets/images/ssl.png) center no-repeat
+                background-size: contain
+                width: 45px
+                height: 45px
+.input
+    width: 100%
+    margin-bottom: 20px
+    .alert
+        padding: 0px
+        margin: 0px
+        position: absolute
+        color: red
+        font-weight: 700
+    .form-control
+        width: 100%
+        font-size: 12px
+        border: 1px
+        border-radius: 6px
+        padding: 4px 6px
+        height: 25px
+@media only screen and (min-width: 800px) and (max-width: 939px)
+    .header
+        height: 100px
+        .spot
+            position: relative
+            top: 20px
+        .expiring
+            position: relative
+            top: 20px 
+    .reg-form
+        height: 460px
+        .head
+            margin-top: 90px
+        .content
+            margin-top: 155px
+    .about
+        .benefits
+            width: 80%
+    .footer
+@media only screen and (max-width: 799px) and (min-width: 661px)
+    .header
+        height: 100px
+        .spot
+            position: relative
+            top: 20px
+        .expiring
+            position: relative
+            top: 20px 
+    .reg-form
+        height: 460px
+        .head
+            margin-top: 90px
+        .content
+            margin-top: 155px
+            .laptop
+                display: none
+    .about
+        .benefits
+            .layer
+                display: inline
+                .term
+                    width: 100%
+    .footer
+        .content
+            width: 80%
+@media only screen and (max-width: 660px) and (min-width: 300px)
+    .header
+        height: 100px
+        .spot
+            position: relative
+            top: 20px
+            width: 114px
+            .number
+                font-size: 36px
+            .desc
+                font-size: 12px
+        .expiring
+            position: relative
+            top: 20px 
+            width: 181px
+            .desc
+                font-size: 12px
+            .timer
+                font-size: 36px
+        .logo
+            width: 92%
+    .reg-form
+        height: 520px
+        .head
+            margin-top: 90px
+        .content
+            margin-top: 220px
+            .laptop
+                display: none
+            .reg-wrapper
+                margin-left: 0px
+    .about
+        .secure-wrapper
+            width: 90%
+            .wrapper
+                h6
+                    font-size: 10px
+        .steps
+            width: 90%
+            .step 
+                margin: 30px 0
+                .description
+                    font-size: 12px
+        .benefits
+            width: 90%
+            .layer
+                display: inline
+                .term
+                    width: 100%
+                    margin: 20px 0
+    .footer
+        .content
+            width: 90%
+            .reg-wrapper
+                width: 100%
+
+            
+

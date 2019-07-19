@@ -9,7 +9,7 @@
             Time Remaining
             <br>OFFER EXPIRES
         </div>
-        <div class="timer">10:03</div>
+        <div class="timer">{{time | date: 'mm:ss'}}</div>
     </div>
 </div>
 <div class="reg-form">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="button">
-                    <button type="submit" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
+                    <button type="submit" (click)="step2Up()" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
                 </div>
             </form>
         </div>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
                 <div class="button">
-                    <button type="submit" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
+                    <button type="submit" (click)="step2Down()" class="btn btn-primary btn-lg">GET FREE ACCESS</button>
                 </div>
             </form>
         </div>
